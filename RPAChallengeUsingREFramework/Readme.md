@@ -42,6 +42,7 @@ RPAChallengeREFrameworkDispatcher/
 ├── Main.xaml
 ├── project.json
 └── README.md
+
 RPAChallenge_REFRamework/
 ├── Main.xaml
 ├── project.json
@@ -51,13 +52,23 @@ RPAChallenge_REFRamework/
 ---
 
 ## 📸 Screenshots
+1. Input
+![Form Screenshot](Images/InputExcel.png)
 
+2. Asset
+![Form Screenshot](Images/Asset.png)
+
+3. Queue
+![Form Screenshot](Images/Queue.png)
+
+4. BotExecution
+![Form Screenshot](Images/BotExecution.png)
 
 ---
 
 ## ▶️ How to Run
 
-1. Upload the Excel data to Orchestrator Queue using Init state
+1. Upload the Excel data to Orchestrator Queue in RPAChallengeREFrameworkDispatcher (We can also do it in Init State, but here I have used a separate dispatcher project)
 2. Configure Assets: `RPAChallengeREFrameworkPath`
 3. Publish to Orchestrator or run locally
 4. Monitor transactions in Orchestrator
