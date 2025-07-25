@@ -4,7 +4,7 @@ This repository showcases some of the UiPath automation projects I have built wh
 
 ## 📁 Projects
 
-### 🔹 [RPAChallenge1 – Dynamic Form Data Entry](https://github.com/SrushtiArekar/UiPath-Portfolio/RPAChallenge1)
+### 🔹 [RPAChallenge1 – Dynamic Form Data Entry](https://github.com/SrushtiArekar/UiPath-Portfolio/tree/main/RPAChallenge)
 
 A UiPath automation project that reads structured data from an Excel file and submits it into the dynamic web form at [rpachallenge.com](https://rpachallenge.com/).
 
