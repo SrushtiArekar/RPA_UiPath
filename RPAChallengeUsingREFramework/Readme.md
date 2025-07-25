@@ -78,7 +78,7 @@ RPAChallenge_REFRamework/
 ## 🙋‍♀️ Author
 
 **Srushti Arekar**  
-[GitHub Profile](https://github.com/SrushtiArekar)
+[MyProfile](https://github.com/SrushtiArekar)
 
 ---
 
