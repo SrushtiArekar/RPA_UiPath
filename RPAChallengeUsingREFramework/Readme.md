@@ -1,4 +1,4 @@
-# 🤖 RPAChallenge_REFramework – UiPath Project
+# 🤖 RPA Project_REFramework – Queue-based Data Entry with REFramework
 
 This project is an advanced version of the [RPA Challenge](https://rpachallenge.com/) implemented using **UiPath REFramework**, **Orchestrator Queues**, and **Assets**.
 
