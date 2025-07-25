@@ -1,4 +1,4 @@
-# UiPath Portfolio – Srushti Arekar
+# Srushti Arekar - RPA UiPath Portfolio
 
 This repository showcases some of the UiPath automation projects I have built while transitioning into RPA.
 
