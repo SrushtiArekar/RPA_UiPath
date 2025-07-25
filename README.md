@@ -19,7 +19,7 @@ A UiPath automation project that reads structured data from an Excel file and su
 **Input:** `RPAChallenge.xlsx`  
 **Output:** Successful submission of all data rows on the website 
 
-### 🔹 [RPAChallenge_REFramework – Queue-based Data Entry with REFramework](https://github.com/SrushtiArekar/UiPath-Portfolio/RPAChallenge_REFramework)
+### 🔹 [RPAChallenge_REFramework – Queue-based Data Entry with REFramework](https://github.com/SrushtiArekar/UiPath-Portfolio/tree/main/RPAChallengeUsingREFramework)
 
 An advanced UiPath project implementing the RPA Challenge using **REFramework**, **Orchestrator Queues**, and **Assets**.
 
