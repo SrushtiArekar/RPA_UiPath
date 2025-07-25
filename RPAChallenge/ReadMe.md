@@ -42,24 +42,31 @@ This is a UiPath automation project that completes the [RPA Challenge](https://r
 ## 📸 Screenshots
 Input File
 ![Form Screenshot](Images/RPAChallengeInputExcel.png)
+
 Form
 ![Form Screenshot](Images/RPAChallengeForm.png)
+
 Steps:
 1. Open the Excel File
 ![Form Screenshot](Images/Step1.png)
+
 2. Read from Excel
 ![Form Screenshot](Images/Step2.png)
+
 3. For each Excel row - Read cell value one by one
 ![Form Screenshot](Images/Step3.png)
 ![Form Screenshot](Images/Step4.png)
 ![Form Screenshot](Images/Step5.png)
 ![Form Screenshot](Images/Step6.png)
+
 4. Open Form on Browser - "https://rpachallenge.com/"
 ![Form Screenshot](Images/Step7.png)
+
 5. Type into Fields (use Anchors as Fields are changing its positions)
 ![Form Screenshot](Images/Step8.png)
 ![Form Screenshot](Images/Step9.png)
 ![Form Screenshot](Images/Step10.png)
+
 6. Click Submit Button on the Form
 ![Form Screenshot](Images/Step11.png)
   
@@ -88,7 +95,7 @@ Steps:
 ## 🙋‍♀️ Author
 
 **Srushti Arekar**  
-[GitHub Profile](https://github.com/SrushtiArekar)
+[MyProfile](https://github.com/SrushtiArekar)
 
 ---
 
