@@ -1,4 +1,4 @@
-# 🤖 RPAChallenge1 - UiPath Project
+# 🤖 RPA Project
 
 This is a UiPath automation project that completes the [RPA Challenge](https://rpachallenge.com/) by:
 
