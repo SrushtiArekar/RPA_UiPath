@@ -61,3 +61,25 @@ This Dispatcher handles the data preparation and transaction item creation by:
     "Email": "john.doe@example.com",
     "PhoneNumber": "1234567890"
   }
+
+## 📸 Screenshots
+
+1. Get the Asset
+![Form Screenshot](Images/Step1.png)
+![Form Screenshot](Images/Asset.png)
+
+2. Read Range Workbook
+![Form Screenshot](Images/Step2.png)
+![Form Screenshot](Images/InputExcel.png)
+
+3. Add Queue Item
+![Form Screenshot](Images/Step3.png)
+![Form Screenshot](Images/Queue.png)
+
+4. Mapping in Add Queue Activity
+![Form Screenshot](Images/Step4.png)
+![Form Screenshot](Images/Step5.png)
+
+5. After Execution - successfully added the data from the Excel to Queue
+When we View the Transactions in Queue
+![Form Screenshot](Images/ViewTransactionQueue.png)
