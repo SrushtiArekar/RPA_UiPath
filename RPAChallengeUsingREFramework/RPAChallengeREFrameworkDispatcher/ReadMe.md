@@ -93,6 +93,48 @@ When we View the Transactions in Queue
 
 ---
 
+▶️ **How to Run**
+**1. Clone the Repository**
+Clone this repository or download the ZIP.
+
+**2. Open the Project in UiPath Studio**
+Open RPAChallengeREFrameworkDispatcher in UiPath Studio.
+
+**3. Create Orchestrator Assets**
+- Navigate to Orchestrator → Assets
+- Create an asset named:
+```vb
+InputExcelPath
+```
+Type: Text
+Value: Full path to your Excel file, e.g.,
+```vb
+C:\Users\YourName\Documents\RPAChallengeInput.xlsx
+```
+
+**4. Configure the Queue in Orchestrator**
+- Navigate to Orchestrator → **Queues**
+- Create a new queue named:
+```vb
+RPAChallengeREFrameworkQueue
+```
+
+**5. Run the Dispatcher**
+- Run the Main.xaml file
+- The Dispatcher will:
+   - Read the Excel using the path from asset
+   - Iterate through each row
+   - Add each row to the queue as a QueueItem using Add Queue Item activity
+
+🛠️ **Built With**
+- UiPath Studio – Community/Enterprise Edition
+- REFramework (Robotic Enterprise Framework) – Used for standardized project structure
+- UiPath Orchestrator – For managing assets and queues
+- Excel Activities Package – For reading tabular data
+- System Activities – For dictionary and workflow control
+- Orchestrator Queues – For transaction-level processing
+- 
+
 ## 🙋‍♀️ Author
 
 **Srushti Arekar**  
