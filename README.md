@@ -4,7 +4,7 @@ This repository showcases some of the UiPath automation projects I have built wh
 
 ## 📁 Projects
 
-### 🔹 [RPAChallenge1 – Dynamic Form Data Entry](https://github.com/SrushtiArekar/UiPath-Portfolio/tree/main/RPAChallenge)
+### 🔹 [RPA Project – Dynamic Form Data Entry](https://github.com/SrushtiArekar/UiPath-Portfolio/tree/main/RPAChallenge)
 
 A UiPath automation project that reads structured data from an Excel file and submits it into the dynamic web form at [rpachallenge.com](https://rpachallenge.com/).
 
@@ -19,7 +19,7 @@ A UiPath automation project that reads structured data from an Excel file and su
 **Input:** `RPAChallenge.xlsx`  
 **Output:** Successful submission of all data rows on the website 
 
-### 🔹 [RPAChallenge_REFramework – Queue-based Data Entry with REFramework](https://github.com/SrushtiArekar/UiPath-Portfolio/tree/main/RPAChallengeUsingREFramework)
+### 🔹 [RPA Project_REFramework – Queue-based Data Entry with REFramework](https://github.com/SrushtiArekar/UiPath-Portfolio/tree/main/RPAChallengeUsingREFramework)
 
 An advanced UiPath project implementing the RPA Challenge using **REFramework**, **Orchestrator Queues**, and **Assets**.
 
