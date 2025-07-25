@@ -13,7 +13,7 @@ This is a UiPath automation project that completes the [RPA Challenge](https://r
 ## 📂 Project Structure
 
 - `Main.xaml` — Main automation logic
-- `RPAChallenge.xlsx` — Input data file
+- `RPAChallenge1.xlsx` — Input data file
 - `project.json` — UiPath project metadata
 
 ---
@@ -28,7 +28,7 @@ This is a UiPath automation project that completes the [RPA Challenge](https://r
 
 ## 📌 How It Works
 
-1. Opens the Excel file `RPAChallenge.xlsx`
+1. Opens the Excel file `RPAChallenge1.xlsx`
 2. Reads each row into a DataTable
 3. Navigates to `https://rpachallenge.com/`
 4. Clicks "Start"
@@ -39,7 +39,7 @@ This is a UiPath automation project that completes the [RPA Challenge](https://r
 ---
 
 ## 📸 Screenshots
-
+![Form Screenshot](Images/RPAChallengeForm.png)
 
 
   
