@@ -39,14 +39,14 @@ This project is an advanced version of the [RPA Challenge](https://rpachallenge.
 ## 📁 Folder Structure
 
 RPAChallengeREFrameworkDispatcher/
-├── Main.xaml
-├── project.json
-└── README.md
+Main.xaml
+project.json
+README.md
 
 RPAChallenge_REFRamework/
-├── Main.xaml
-├── project.json
-└── README.md
+Main.xaml
+project.json
+README.md
 
 
 ---
