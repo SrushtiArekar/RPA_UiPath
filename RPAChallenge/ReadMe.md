@@ -1,4 +1,5 @@
-# 🤖 RPA Project
+# 🤖 RPA Project – Dynamic Form Data Entry
+A UiPath automation project that reads structured data from an Excel file and submits it into the dynamic web form at rpachallenge.com.
 
 This is a UiPath automation project that completes the [RPA Challenge](https://rpachallenge.com/) by:
 
