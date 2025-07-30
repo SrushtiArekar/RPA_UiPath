@@ -9,6 +9,8 @@ This project automation project uses the **Robotic Enterprise Framework (REFrame
 
 This process will read the data from Accrual excel file and create Journal entry in JD Edwards system. The Journal entry is created, and the batch number is extracted from JD Edwards. The batch number is populated in Accrual excel file along with the information such as Prepared By and the date of preparation. The Accrual excel file is converted to PDF format. The Batch report is then downloaded from JD Edwards system in PDF format. The PDF format of Accrual file and the batch report are merged to prepare a final report. The final report is then sent to stakeholders through email.
 
+## Steps:
+
  - Reads data from a **Accrual excel file**.
  - Uses Assets for **input file path** and **URL**
  - Pushes each row as a transaction item to an **Orchestrator Queue**
@@ -20,6 +22,7 @@ This process will read the data from Accrual excel file and create Journal entry
  - Downloads the executed report in **PDF format**
  - Sends the **final report to stakeholders via email**
  - Gracefully **handles system/business exceptions**
+   
 ![Form Screenshot](Images/ProcessFlow.png)
 
 ---
@@ -27,16 +30,23 @@ This process will read the data from Accrual excel file and create Journal entry
 ## 🏗️ Project Architecture
 
 - **Framework:** REFramework (Transactional Business Process)
-- **Queues:** `RPAChallengeREFrameworkQueue`  
-- **Assets:**  
-  - `RPAChallengeREFrameworkPath` - `C:\Users\srush\Downloads\RPAChallengeNew.xlsx`
-- **Transaction Item Type:** `QueueItem` with fields like FirstName, LastName, etc.
+- **Queues:** `REFramework_JDE_Queue`  
+- **Assets:**
+    - `REFrameworkJDEAssignment` - Accrual excel file path
+    - `Email_To_Asset` 
+    - `Email_CC_Asset` 
+    - `Email_Subject_Asset`
+    - `Email_Body_File_Asset`
+- **Transaction Item Type:** `QueueItem` with fields like ACCOUNT, Amount, SUB, SUB TYPE, REMARK, DESCRIPTION etc.
 
 ---
 
 ## 🛠️ Technologies Used
 
 - UiPath Studio (REFramework)
+- JD Edwards ERP system
+- Microsoft Outlook
+- PDF Reader
 - Orchestrator Queues & Assets
 - Excel Activities
 - Anchor Base Activities
@@ -60,16 +70,21 @@ RPAChallenge_REFRamework/
 ---
 
 ## 📸 Screenshots
-1. Input
-![Form Screenshot](Images/InputExcel.png)
+1. Input - Accrual Excel File
+![Form Screenshot](Images/AccrualExcel.png)
 
-2. Asset
-![Form Screenshot](Images/Asset.png)
+2. Assets
+![Form Screenshot](Images/AssetAccrualExcelPath.png)
+![Form Screenshot](Images/AssetEmailTo.png)
+![Form Screenshot](Images/AssetCCEmailID.png)
+![Form Screenshot](Images/AssetEmailBody.png)
+![Form Screenshot](Images/AssetEmailSubject.png)
 
 3. Queue
 ![Form Screenshot](Images/Queue.png)
+![Form Screenshot](Images/QueueTransactionView.png)
 
-4. BotExecution
+4. Final result - Email sent to the stakeholder
 ![Form Screenshot](Images/BotExecution.png)
 
 ---
