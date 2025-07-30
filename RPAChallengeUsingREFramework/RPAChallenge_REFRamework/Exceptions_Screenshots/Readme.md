@@ -3,7 +3,7 @@
 The Exceptions_Screenshots folder contains automatically captured images of the UI or error context at the time of an exception. This serves as a visual audit trail to help analyze and debug failures that occur during automation execution.
 
 Some Exceptions while testing - 
-![Form Screenshot](Exceptions_Screenshots/ExceptionScreenshot1.png)
+![Form Screenshot](ExceptionScreenshot1.png)
 ![Form Screenshot](Exceptions_Screenshots/ExceptionScreenshot2.png)
 ![Form Screenshot](Exceptions_Screenshots/ExceptionScreenshot3.png)
 ![Form Screenshot](Exceptions_Screenshots/ExceptionScreenshot4.png)
