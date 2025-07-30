@@ -89,7 +89,7 @@ The Queue Created - RPAChallengeREFrameworkQueue
 
 5. After Execution - successfully added the data from the Excel to Queue
 When we View the Transactions in Queue
-![Form Screenshot](Images/ViewTransactionQueue.png)
+![Form Screenshot](Images/ViewTransactionsInQueue.png)
 
 ---
 
