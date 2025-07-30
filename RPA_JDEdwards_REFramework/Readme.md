@@ -1,10 +1,13 @@
-# 🤖 RPA Project_REFramework – Automation using REFramework to do the Journal Entries in JD Edwards
+# 🤖 RPA Project_REFramework – Journal Entry Processing in JD Edwards using RPA REFramework
 
 This project automation project uses the **Robotic Enterprise Framework (REFramework)** to automate the process of **creating Journal Entries** in **JD Edwards EnterpriseOne (ERP System)**.
+
 
 ---
 
 ## 🚀 What It Does
+
+This process will read the data from Accrual excel file and create Journal entry in JD Edwards system. The Journal entry is created, and the batch number is extracted from JD Edwards. The batch number is populated in Accrual excel file along with the information such as Prepared By and the date of preparation. The Accrual excel file is converted to PDF format. The Batch report is then downloaded from JD Edwards system in PDF format. The PDF format of Accrual file and the batch report are merged to prepare a final report. The final report is then sent to stakeholders through email.
 
 ✅ Reads data from an CSV Report file  
 ✅ Uses **Assets for input file path and URL**  
@@ -14,6 +17,7 @@ This project automation project uses the **Robotic Enterprise Framework (REFrame
 ✅ Adding the data into the grid **line by line** and followed by the steps required by process for Journal Entry.
 ✅ Once all the data is added into the Grid in the application we have to **submit the Data** and then **Extact the Batch Number generated**.
 ✅ Then run a Report named - **General Jounal by Batch Report** and pass the Batch number generated in the previous step.
+✅ The executed report is downloaded in **PDF format** and the final report will be **sent to stakeholders through email**.
 ✅ **Gracefully handles system/business exceptions**
 ![Form Screenshot](Images/ProcessFlow.png)
 
