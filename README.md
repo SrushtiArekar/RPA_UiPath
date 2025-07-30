@@ -46,10 +46,10 @@ An enterprise-grade automation using UiPath REFramework that **reads data from a
 
 **Key Highlights:**
 - 
-✅ Reads line-wise transactional data from Accrual Excel input  
-✅ Uses Assets to configure input file path and JD Edwards URL  
-✅ Pushes each row as a Queue Item to Orchestrator Queues  
-✅ Leverages REFramework for robust, retry-safe transaction processing  
+✅ Reads line-wise transactional data from `Accrual Excel input`  
+✅ Uses `Assets` to configure input file path and JD Edwards URL  
+✅ Pushes each row as a `Queue` Item to Orchestrator Queues  
+✅ Leverages `REFramework` for robust, retry-safe transaction processing  
 ✅ Automates the JD Edwards menu navigation and opens the Journal Entry form  
 ✅ Enters data into the grid line by line to create journal entries  
 ✅ Extracts the Batch Number once the transaction is submitted  
