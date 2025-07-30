@@ -63,3 +63,17 @@ An enterprise-grade automation using UiPath REFramework that **reads data from a
 **Technologies:** UiPath REFramework, Orchestrator Queues, Assets, Excel Activities, UI Automation, JD Edwards ERP, PDF Activities, Email Automation  
 **Input:** Accrual_Report Excel File  
 **Output:** Journal Entry Posted in JD Edwards + Final Report (PDF) emailed to stakeholders
+
+---
+
+## 🙋‍♀️ Author
+
+**Srushti Arekar**  
+[MyProfile](https://github.com/SrushtiArekar)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
