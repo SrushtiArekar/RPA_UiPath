@@ -20,8 +20,7 @@ This project is an advanced version of the [RPA Challenge](https://rpachallenge.
 
 - **Framework:** REFramework (Transactional Business Process)
 - **Queues:** `RPAChallengeREFrameworkQueue`  
-- **Assets:**  
-  - `RPAChallengeREFrameworkPath` - `C:\Users\srush\Downloads\RPAChallengeNew.xlsx`
+- **Assets:** `RPAChallengeREFrameworkPath` - `C:\Users\srush\Downloads\RPAChallengeNew.xlsx`
 - **Transaction Item Type:** `QueueItem` with fields like FirstName, LastName, etc.
 
 ---
