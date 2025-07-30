@@ -90,15 +90,6 @@ RPAChallenge_REFRamework/
 
 ---
 
-## ▶️ How to Run
-
-1. Upload the Excel data to Orchestrator Queue in RPAChallengeREFrameworkDispatcher 
-2. Configure Assets: `RPAChallengeREFrameworkPath`
-3. Publish to Orchestrator or run locally
-4. Monitor transactions in Orchestrator
-
----
-
 ## 🙋‍♀️ Author
 
 **Srushti Arekar**  
