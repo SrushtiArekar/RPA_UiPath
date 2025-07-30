@@ -20,17 +20,17 @@ This process will read the data from Accrual excel file and create Journal entry
 ✅ The executed report is downloaded in **PDF format** and the final report will be **sent to stakeholders through email**.
 ✅ **Gracefully handles system/business exceptions**
 
-✅ Reads data from a **Accrual excel file**.
-✅ Uses Assets for input file path and URL
-✅ Pushes each row as a transaction item to an Orchestrator Queue
-✅ Uses REFramework to process each item dynamically
-✅ Traverses through the JD Edwards EnterpriseOne Menu to open the desired application for entering the Journal Entries
-✅ Adds the data into the grid line by line, followed by the required steps for Journal Entry
-✅ Once all the data is added into the grid, submits the data and then extracts the Batch Number generated
-✅ Runs a report named General Journal by Batch Report using the generated Batch Number
-✅ Downloads the executed report in PDF format
-✅ Sends the final report to stakeholders via email
-✅ Gracefully handles system/business exceptions
+ ✅ Reads data from a **Accrual excel file**.
+ ✅ Uses Assets for input file path and URL
+ ✅ Pushes each row as a transaction item to an Orchestrator Queue
+ ✅ Uses REFramework to process each item dynamically
+ ✅ Traverses through the JD Edwards EnterpriseOne Menu to open the desired application for entering the Journal Entries
+ ✅ Adds the data into the grid line by line, followed by the required steps for Journal Entry
+ ✅ Once all the data is added into the grid, submits the data and then extracts the Batch Number generated
+ ✅ Runs a report named General Journal by Batch Report using the generated Batch Number
+ ✅ Downloads the executed report in PDF format
+ ✅ Sends the final report to stakeholders via email
+ ✅ Gracefully handles system/business exceptions
 ![Form Screenshot](Images/ProcessFlow.png)
 
 ---
