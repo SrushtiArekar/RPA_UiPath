@@ -9,6 +9,7 @@ This repository showcases some of the UiPath automation projects I have built wh
 A UiPath automation project that reads structured data from an Excel file and submits it into the dynamic web form at [rpachallenge.com](https://rpachallenge.com/).
 
 **Key Highlights:**
+- 
 ✅ Reads data row by row from Excel  
 ✅ Uses `Anchor Base` to dynamically identify form fields  
 ✅ Handles randomly changing field order on the form  
@@ -26,6 +27,7 @@ A UiPath automation project that reads structured data from an Excel file and su
 An advanced UiPath project implementing the RPA Challenge using **REFramework**, **Orchestrator Queues**, and **Assets**.
 
 **Key Highlights:**
+- 
 ✅ Uses Queue-based transaction processing  
 ✅ Assets-driven configuration for file path and URL  
 ✅ Dynamic field mapping using `Anchor Base`  
@@ -43,6 +45,7 @@ An advanced UiPath project implementing the RPA Challenge using **REFramework**,
 An enterprise-grade automation using UiPath REFramework that **reads data from an Accrual Excel file** and **performs end-to-end Journal Entry** posting **in JD Edwards EnterpriseOne**. The automation **retrieves the generated Batch Number**, **prepares a consolidated PDF report**, and **delivers it to stakeholders via email**.
 
 **Key Highlights:**
+- 
 ✅ Reads line-wise transactional data from Accrual Excel input  
 ✅ Uses Assets to configure input file path and JD Edwards URL  
 ✅ Pushes each row as a Queue Item to Orchestrator Queues  
