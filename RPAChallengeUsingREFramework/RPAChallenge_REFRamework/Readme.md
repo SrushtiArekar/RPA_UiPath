@@ -123,7 +123,8 @@ Reuse or modularize using Invoke Workflow activities
 ![Form Screenshot](Images/Step7.png)
 ![Form Screenshot](Images/Step8.png)
 ![Form Screenshot](Images/Step9.png)
-![Form Screenshot](Images/Step10.png)
+
+**6. End Process - Close Edge Browser - use appropriate activity to close the application**
 ![Form Screenshot](Images/Step11.png)
 ![Form Screenshot](Images/Step12.png)
 
