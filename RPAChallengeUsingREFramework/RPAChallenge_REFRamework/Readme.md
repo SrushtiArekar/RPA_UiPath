@@ -97,19 +97,26 @@ Reuse or modularize using Invoke Workflow activities
 
 ## 🖼️ Screenshots
 
-1. First update the Config.xlsx Excel Sheet with the Asset and Queue variables as shown below
+**1. First update the Config.xlsx Excel Sheet with the Asset and Queue variables as shown below**
 ![Form Screenshot](Images/ConfigSettings.png)
 ![Form Screenshot](Images/ConfigConstants.png)
 ![Form Screenshot](Images/ConfigAssets.png)
 
-2. REFramework main Workflow
+**2. REFramework main Workflow**
 ![Form Screenshot](Images/REFramework.png)
 
-3. 
+**3. Initialization - Invoke KillAllProcesses Workflow - "Kill Process" Activity - Kill the Edge process**
 ![Form Screenshot](Images/Step1.0.png)
 ![Form Screenshot](Images/Step1.1.png)
+
+**4. Invoke InitAllApplications  - "Use Application/ Browser" Activity - put launching url link**
+**Properties**
+- Close - Never
+- Output Element - Create Variable - "uieEdgeGoogleSearch" - (Later convert it to argument - set the direction - in, out, in/out ) - (later refresh the arguments and map the appropriate  variables)
 ![Form Screenshot](Images/Step2.png)
 ![Form Screenshot](Images/Step3.png)
+
+**5. Invoke Process Workflow - Open Workflow**
 ![Form Screenshot](Images/Step4.png)
 ![Form Screenshot](Images/Step5.png)
 ![Form Screenshot](Images/Step6.png)
