@@ -1,3 +1,67 @@
+# 🤖 RPA Challenge Performer – REFramework | UiPath
+
+This project is the **Performer** component of the **RPA Challenge** implemented using **UiPath’s REFramework**. It reads data from **Orchestrator Queues**, enters each row into the RPA Challenge web form, and handles exceptions and retry mechanisms gracefully.
+
+> 💡 This is the Performer part of the full REFramework solution. The Dispatcher (linked below) is responsible for uploading data to the queue.
+
+### 🔗 Related Dispatcher Project
+[RPAChallengeREFrameworkDispatcher](https://github.com/SrushtiArekar/UiPath-Portfolio/tree/main/RPAChallengeUsingREFramework/RPAChallengeREFrameworkDispatcher)
+
+---
+
+## 📌 Project Overview
+
+- Uses **UiPath REFramework** with minor modifications for queue-based input
+- Reads `TransactionItem` of type `QueueItem`
+- Extracts SpecificContent from each queue item
+- Navigates to the [RPA Challenge website](https://www.rpachallenge.com/)
+- Fills out the form with all the required fields
+- Submits the form and proceeds with the next item
+
+---
+
+## 📂 Project Structure
+
+- `Main.xaml` – REFramework entry point
+- `InitAllSettings.xaml` – Initializes config
+- `GetTransactionData.xaml` – Fetches next queue item
+- `Process.xaml` – Main logic to fill and submit the form
+- `ExceptionHandler.xaml` – Handles errors and retries
+- `Config.xlsx` – Configuration file
+
+---
+
+## 🖼️ Screenshots
+
+![RPA Challenge Form](../Images/RPAChallengeFormSubmission.png)
+
+---
+
+## ▶️ How to Run
+
+1. Run the [Dispatcher](../RPAChallengeREFrameworkDispatcher) project to upload queue items to `RPAChallengeREFrameworkQueue`.
+2. In UiPath Orchestrator:
+   - Ensure assets like URL, credentials (if needed), etc. are defined.
+3. Open this Performer project in UiPath Studio.
+4. Run `Main.xaml`.
+5. Watch as it loops through the queue, submits the form, and logs the results.
+
+---
+
+## 🛠️ Built With
+
+- UiPath REFramework
+- UiPath Studio
+- Orchestrator Queues
+- Excel & Web Automation Activities
+
+---
+
+## 🙋‍♀️ Author
+
+**Srushti Arekar**  
+Automation Developer | JD Edwards & UiPath  
+📧 sarekar3003@gmail.com
 
 
 
