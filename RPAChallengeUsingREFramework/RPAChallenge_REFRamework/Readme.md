@@ -98,7 +98,7 @@ Reuse or modularize using Invoke Workflow activities
 ## 🖼️ Screenshots
 
 1. First update the Config.xlsx Excel Sheet with the Asset and Queue variables as shown below
-![Form Screenshot](Images/ConfigSetings.png)
+![Form Screenshot](Images/ConfigSettings.png)
 ![Form Screenshot](Images/ConfigConstants.png)
 ![Form Screenshot](Images/ConfigAssets.png)
 
