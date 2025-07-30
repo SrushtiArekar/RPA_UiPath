@@ -135,7 +135,7 @@ Reuse or modularize using Invoke Workflow activities
 1. Run the [Dispatcher](https://github.com/SrushtiArekar/UiPath-Portfolio/tree/main/RPAChallengeUsingREFramework/RPAChallengeREFrameworkDispatcher) project to upload queue items to `RPAChallengeREFrameworkQueue`.
 2. In UiPath Orchestrator:
    - Ensure assets like URL, credentials (if needed), etc. are defined.
-3. Open this Performer project in UiPath Studio.
+3. Open this [Performer](https://github.com/SrushtiArekar/UiPath-Portfolio/tree/main/RPAChallengeUsingREFramework/RPAChallenge_REFRamework) project in UiPath Studio.
 4. Run `Main.xaml`.
 5. Watch as it loops through the queue, submits the form, and logs the results.
 
