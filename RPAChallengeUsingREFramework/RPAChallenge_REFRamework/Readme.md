@@ -7,6 +7,8 @@ This project is the **Performer** component of the **RPA Challenge** implemented
 ## 🧠 REFramework — Robotic Enterprise Framework
 The Robotic Enterprise Framework (REFramework) is a robust, scalable, and reusable automation framework built using UiPath’s State Machine architecture. It is ideal for transactional business processes and provides a standard template to handle initialization, transaction processing, exception handling, and application cleanup—with built-in support for Orchestrator Queues and enhanced logging.
 
+---
+
 ## 🚀 Key Features
 ✅ Based on Transactional Business Process template
 🧩 Implements State Machine for modular control flow
@@ -16,58 +18,53 @@ The Robotic Enterprise Framework (REFramework) is a robust, scalable, and reusab
 📸 Captures screenshots for system exceptions to aid debugging
 📑 Provides detailed logs for traceability and auditing
 
+---
+
 ## 🔄 Workflow Phases
 ## 1️⃣ Initialization Phase
 **Workflow	Description**
-```vb InitAllSettings.xaml```	Loads configuration data from Config.xlsx and Orchestrator assets
-```vb GetAppCredential.xaml```	Retrieves credentials from secure stores
-```vb InitAllApplications.xaml```	Launches and logs in to required applications
+- ```vb InitAllSettings.xaml``` - Loads configuration data from Config.xlsx and Orchestrator assets
+- ```vb GetAppCredential.xaml``` - Retrieves credentials from secure stores
+- ```vb InitAllApplications.xaml``` - Launches and logs in to required applications
 
 ## 2️⃣ Transaction Retrieval
 **Workflow	Description**
-GetTransactionData.xaml	Fetches transaction items from Orchestrator Queue or other sources via Config("OrchestratorQueueName")
+- ```vb GetTransactionData.xaml``` - Fetches transaction items from Orchestrator Queue or other sources via ```vb Config("OrchestratorQueueName")```
 
 ## 3️⃣ Transaction Processing
 **Workflow	Description**
-Process.xaml	Main business logic — processes each transaction and invokes sub-workflows
-SetTransactionStatus.xaml	Updates the transaction status in Orchestrator (Success, Business Exception, System Exception)
+- ```vb Process.xaml``` - Main business logic — processes each transaction and invokes sub-workflows
+- ```vb SetTransactionStatus.xaml``` - Updates the transaction status in Orchestrator (Success, Business Exception, System Exception)
 
 ## 4️⃣ Closure Phase
 **Workflow	Description**
-CloseAllApplications.xaml	Logs out and gracefully closes all used applications
+- ```vb CloseAllApplications.xaml``` - Logs out and gracefully closes all used applications
 
 ## 🧰 Setting Up a New REFramework Project
-Customize Config.xlsx
-
+**Customize Config.xlsx**
 Add application paths, URLs, credentials, queue names, and other constants
 
-Implement Application Initialization & Cleanup
-
+**Implement Application Initialization & Cleanup**
 Update InitAllApplications.xaml and CloseAllApplications.xaml to suit your process
 
-Adapt Transaction Logic
-
+**Adapt Transaction Logic**
 Modify GetTransactionData.xaml and SetTransactionStatus.xaml if you're not using Orchestrator queues
 
-Develop Process Logic
-
+**Develop Process Logic**
 Design the core automation steps inside Process.xaml
-
 Reuse or modularize using Invoke Workflow activities
-
-🛡️ Exception Handling & Logging
-REFramework includes:
-
-Global try-catch in each state
-
-Retry logic for system exceptions
-
-Detailed logging using Log Message activities
-
-Automatic screenshot capture on system failure (saved in /Exceptions_Screenshots)
 
 ---
 
+## 🛡️ Exception Handling & Logging
+
+**REFramework includes:**
+- Global try-catch in each state
+- Retry logic for system exceptions
+- Detailed logging using Log Message activities
+- Automatic screenshot capture on system failure (saved in /Exceptions_Screenshots)
+
+---
 
 > 💡 This is the Performer part of the full REFramework solution. The Dispatcher (linked below) is responsible for uploading data to the queue.
 
