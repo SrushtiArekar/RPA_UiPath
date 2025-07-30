@@ -23,22 +23,22 @@ The Robotic Enterprise Framework (REFramework) is a robust, scalable, and reusab
 ## 🔄 Workflow Phases
 ## 1️⃣ Initialization Phase
 **Workflow	Description**
-- ```vb InitAllSettings.xaml``` - Loads configuration data from Config.xlsx and Orchestrator assets
-- ```vb GetAppCredential.xaml``` - Retrieves credentials from secure stores
-- ```vb InitAllApplications.xaml``` - Launches and logs in to required applications
+- ```InitAllSettings.xaml``` - Loads configuration data from Config.xlsx and Orchestrator assets
+- ```GetAppCredential.xaml``` - Retrieves credentials from secure stores
+- ```InitAllApplications.xaml``` - Launches and logs in to required applications
 
 ## 2️⃣ Transaction Retrieval
 **Workflow	Description**
-- ```vb GetTransactionData.xaml``` - Fetches transaction items from Orchestrator Queue or other sources via ```vb Config("OrchestratorQueueName")```
+- ```GetTransactionData.xaml``` - Fetches transaction items from Orchestrator Queue or other sources via ```Config("OrchestratorQueueName")```
 
 ## 3️⃣ Transaction Processing
 **Workflow	Description**
-- ```vb Process.xaml``` - Main business logic — processes each transaction and invokes sub-workflows
-- ```vb SetTransactionStatus.xaml``` - Updates the transaction status in Orchestrator (Success, Business Exception, System Exception)
+- ```Process.xaml``` - Main business logic — processes each transaction and invokes sub-workflows
+- ```SetTransactionStatus.xaml``` - Updates the transaction status in Orchestrator (Success, Business Exception, System Exception)
 
 ## 4️⃣ Closure Phase
 **Workflow	Description**
-- ```vb CloseAllApplications.xaml``` - Logs out and gracefully closes all used applications
+- ```CloseAllApplications.xaml``` - Logs out and gracefully closes all used applications
 
 ## 🧰 Setting Up a New REFramework Project
 **Customize Config.xlsx**
