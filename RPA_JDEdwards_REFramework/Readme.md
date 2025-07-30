@@ -83,8 +83,9 @@ RPAChallenge_REFRamework/
 3. Queue
 ![Form Screenshot](Images/Queue.png)
 ![Form Screenshot](Images/QueueTransactionView.png)
+![Form Screenshot](Images/QueueTransactionView2.png)
 
-4. Final result - Email sent to the stakeholder
+5. Final result - Email sent to the stakeholder
 ![Form Screenshot](Images/BotExecution.png)
 
 ---
