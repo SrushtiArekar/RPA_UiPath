@@ -56,9 +56,9 @@ An enterprise-grade automation using UiPath REFramework that **reads data from a
 ✅ Executes General Journal by Batch Report using the Batch Number  
 ✅ Downloads the generated report in PDF format  
 ✅ Converts the Accrual Excel into a PDF  
-✅ Merges Accrual PDF + JD Edwards Report to form a final consolidated document  
+✅ Merges `Accrual PDF + JD Edwards Report` to form a final consolidated document  
 ✅ Sends the final report to designated stakeholders via email  
-✅ Gracefully handles System and Business Exceptions using REFramework best practices  
+✅ Gracefully handles System and `Business Exceptions` using REFramework best practices  
 
 **Technologies:** UiPath REFramework, Orchestrator Queues, Assets, Excel Activities, UI Automation, JD Edwards ERP, PDF Activities, Email Automation  
 **Input:** Accrual_Report Excel File  
