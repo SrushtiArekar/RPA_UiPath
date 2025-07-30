@@ -97,7 +97,28 @@ Reuse or modularize using Invoke Workflow activities
 
 ## 🖼️ Screenshots
 
+1. First update the Config.xlsx Excel Sheet with the Asset and Queue variables as shown below
+![Form Screenshot](Images/ConfigSetings.png)
+![Form Screenshot](Images/ConfigConstants.png)
+![Form Screenshot](Images/ConfigAssets.png)
 
+2. REFramework main Workflow
+![Form Screenshot](Images/REFramework.png)
+
+3. 
+![Form Screenshot](Images/Step1.0.png)
+![Form Screenshot](Images/Step1.1.png)
+![Form Screenshot](Images/Step2.png)
+![Form Screenshot](Images/Step3.png)
+![Form Screenshot](Images/Step4.png)
+![Form Screenshot](Images/Step5.png)
+![Form Screenshot](Images/Step6.png)
+![Form Screenshot](Images/Step7.png)
+![Form Screenshot](Images/Step8.png)
+![Form Screenshot](Images/Step9.png)
+![Form Screenshot](Images/Step10.png)
+![Form Screenshot](Images/Step11.png)
+![Form Screenshot](Images/Step12.png)
 
 ---
 
