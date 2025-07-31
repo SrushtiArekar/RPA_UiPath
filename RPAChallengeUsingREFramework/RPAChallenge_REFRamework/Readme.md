@@ -10,13 +10,13 @@ The Robotic Enterprise Framework (REFramework) is a robust, scalable, and reusab
 ---
 
 ## 🚀 Key Features
-- ✅ Based on Transactional Business Process template
-- 🧩 Implements State Machine for modular control flow
-- 🔐 Securely retrieves credentials from Orchestrator Assets or Windows Credential Manager
-- ⚙️ Stores dynamic settings in Config.xlsx and environment-specific assets
-- 📦 Handles Orchestrator Queue items and updates their transaction statuses
-- 📸 Captures screenshots for system exceptions to aid debugging
-- 📑 Provides detailed logs for traceability and auditing
+- Based on Transactional Business Process template
+- Implements State Machine for modular control flow
+- Securely retrieves credentials from Orchestrator Assets or Windows Credential Manager
+- Stores dynamic settings in Config.xlsx and environment-specific assets
+- Handles Orchestrator Queue items and updates their transaction statuses
+- Captures screenshots for system exceptions to aid debugging
+- Provides detailed logs for traceability and auditing
 
 ---
 
