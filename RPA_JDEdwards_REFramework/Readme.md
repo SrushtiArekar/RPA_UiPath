@@ -75,17 +75,21 @@ RPAChallenge_REFRamework/
 
 2. Assets
 ![Form Screenshot](Images/AssetAccrualExcelPath.png)
+- `Email_To_Asset`
 ![Form Screenshot](Images/AssetEmailTo.png)
+- `Email_CC_Asset`
 ![Form Screenshot](Images/AssetCCEmailID.png)
-![Form Screenshot](Images/AssetEmailBody.png)
+- `Email_Subject_Asset`
 ![Form Screenshot](Images/AssetEmailSubject.png)
+- `Email_Body_File_Asset`
+![Form Screenshot](Images/AssetEmailBody.png)
 
 3. Queue
 ![Form Screenshot](Images/Queue.png)
 ![Form Screenshot](Images/QueueTransactionView.png)
 ![Form Screenshot](Images/QueueTransactionView2.png)
 
-5. Final result - Email sent to the stakeholder
+4. Final result - Email sent to the stakeholder
 ![Form Screenshot](Images/BotExecution.png)
 
 ---
