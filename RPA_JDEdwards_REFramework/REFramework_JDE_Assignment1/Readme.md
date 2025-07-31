@@ -132,27 +132,82 @@ The Robotic Enterprise Framework (REFramework) is a scalable and robust automati
 ![Form Screenshot](Images/REFramework.png)
 
 **3. Initialization - Invoke KillAllProcesses Workflow - "Kill Process" Activity - Kill the Edge process**
-![Form Screenshot](Images/Step1.0.png)
-![Form Screenshot](Images/Step1.1.png)
+![Form Screenshot](Images/Step0.0.png)
+![Form Screenshot](Images/Step0.1.png)
 
-**4. Invoke InitAllApplications  - "Use Application/ Browser" Activity - put launching url link**
+**4. Read Range Workbook**
+![Form Screenshot](Images/Step1.png)
+
+**4. Invoke InitAllApplications  - "Use Application/ Browser" Activity - put JDE Login url link**
 **Properties**
 - Close - Never
-- Output Element - Create Variable - "uieEdgeGoogleSearch" - (Later convert it to argument - set the direction - in, out, in/out ) - (later refresh the arguments and map the appropriate  variables)
+- Output Element - Create Variable - "uieJDELoginPage" - (Later convert it to argument - set the direction - in, out, in/out ) - (later refresh the arguments and map the appropriate  variables)
 ![Form Screenshot](Images/Step2.png)
 ![Form Screenshot](Images/Step3.png)
 
-**5. Invoke Process Workflow - Open Workflow**
+**5. Enter JDE Login Credentials and then click Sign In button**
 ![Form Screenshot](Images/Step4.png)
 ![Form Screenshot](Images/Step5.png)
+
+**6. Now navigate through the EnterpriseOne Menu to the desired Application for Journal Entry**
+![Form Screenshot](Images/JDSM.png)
 ![Form Screenshot](Images/Step6.png)
 ![Form Screenshot](Images/Step7.png)
 ![Form Screenshot](Images/Step8.png)
+
+**7. Once the Application is open, click Add Button**
+![Form Screenshot](Images/JDS1.png)
+![Form Screenshot](Images/JDS2.png)
+
+**8. Map the parameters**
 ![Form Screenshot](Images/Step9.png)
 
-**6. End Process - Close Edge Browser - use appropriate activity to close the application**
+**9. In Process Transaction - write into the fields and grid the data line by line and then click okay button**
+![Form Screenshot](Images/Step10.png)
 ![Form Screenshot](Images/Step11.png)
 ![Form Screenshot](Images/Step12.png)
+![Form Screenshot](Images/Step13.png)
+![Form Screenshot](Images/Step14.png)
+![Form Screenshot](Images/Step15.png)
+
+**10. Get the Batch Number generated and store it in variable**
+![Form Screenshot](Images/Step16.png)
+![Form Screenshot](Images/Step17.png)
+
+**11. Map the parameters**
+![Form Screenshot](Images/Step18.png)
+
+**12. End Process - in Close all Application Workflow - close the Journal Entry application and run the General Journal by Batch Report**
+![Form Screenshot](Images/Step18.png)
+![Form Screenshot](Images/Step19.png)
+![Form Screenshot](Images/Step20.png)
+![Form Screenshot](Images/Step21.png)
+![Form Screenshot](Images/Step22.png)
+![Form Screenshot](Images/Step23.png)
+![Form Screenshot](Images/Step24.png)
+![Form Screenshot](Images/Step25.png)
+
+**13. Open the executed report**
+![Form Screenshot](Images/Step26.png)
+
+**14. Get the value of Batch Number, Batch Date, User ID from the report ans store them in variables** 
+![Form Screenshot](Images/Step27.png)
+
+**15. Open the excel again and update some fields like "Prepared by", "Date", "Posted" with the extracted values from previous step**
+![Form Screenshot](Images/Step28.png)
+![Form Screenshot](Images/Step29.png)
+![Form Screenshot](Images/Step30.png)
+
+**16. Now Get from assets values for To Email ID, CC Email ID, Attachment Path, Email Subject and also Email Body**
+![Form Screenshot](Images/Step31.png)
+
+**17. Send email to stakeholder from Outlook**
+![Form Screenshot](Images/Step32.png)
+![Form Screenshot](Images/Step33.png)
+
+**6. End Process - Close Edge Browser - use appropriate activity to close the application**
+![Form Screenshot](Images/Step34.png)
+![Form Screenshot](Images/Step35.png)
 
 ---
 
