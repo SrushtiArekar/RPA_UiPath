@@ -1,26 +1,28 @@
-# 🤖 RPA Challenge Performer – REFramework | UiPath
+# 🤖 JDE Accrual Journal Entry Performer – REFramework | UiPath
 
-This project is the **Performer** component of the **RPA Challenge** implemented using **UiPath’s REFramework**. It reads data from **Orchestrator Queues**, enters each row into the RPA Challenge web form, and handles exceptions and retry mechanisms gracefully.
+This project is the **Performer component** of the **JDE Accrual Journal Entry** automation built using **UiPath’s REFramework**. It retrieves transaction data from **Orchestrator Queues**, processes each line in **JD Edwards EnterpriseOne**, generates a final report, and sends it to stakeholders via email.
 
 ---
 
 ## 🧠 REFramework — Robotic Enterprise Framework
-The Robotic Enterprise Framework (REFramework) is a robust, scalable, and reusable automation framework built using UiPath’s State Machine architecture. It is ideal for transactional business processes and provides a standard template to handle initialization, transaction processing, exception handling, and application cleanup—with built-in support for Orchestrator Queues and enhanced logging.
+The Robotic Enterprise Framework (REFramework) is a scalable and robust automation architecture based on a state machine. It efficiently handles transactional processes, integrates logging, supports retry logic, manages Orchestrator queues, and gracefully handles exceptions.
 
 ---
 
 ## 🚀 Key Features
-- ✅ Based on Transactional Business Process template
-- 🧩 Implements State Machine for modular control flow
-- 🔐 Securely retrieves credentials from Orchestrator Assets or Windows Credential Manager
-- ⚙️ Stores dynamic settings in Config.xlsx and environment-specific assets
-- 📦 Handles Orchestrator Queue items and updates their transaction statuses
-- 📸 Captures screenshots for system exceptions to aid debugging
-- 📑 Provides detailed logs for traceability and auditing
+- ✅ Built entirely on REFramework with best practices
+- ✅ Processes Accrual Journal Entries in JD Edwards
+- ✅ Retrieves transaction data from Orchestrator Queue
+- ✅ Populates Accrual Excel file with Batch Number & metadata
+- ✅ Generates and downloads the General Journal Batch Report
+- ✅ Merges PDFs and sends email with final report
+- ✅ Uses Config.xlsx and Assets for dynamic settings
+- ✅ Robust exception and retry mechanism for resilience
 
 ---
 
 ## 🔄 Workflow Phases
+
 ## 1️⃣ Initialization Phase
 **Workflow	Description**
 - ```InitAllSettings.xaml``` - Loads configuration data from Config.xlsx and Orchestrator assets
@@ -29,30 +31,59 @@ The Robotic Enterprise Framework (REFramework) is a robust, scalable, and reusab
 
 ## 2️⃣ Transaction Retrieval
 **Workflow	Description**
-- ```GetTransactionData.xaml``` - Fetches transaction items from Orchestrator Queue or other sources via ```Config("OrchestratorQueueName")```
+- GetTransactionData.xaml – Fetches items from Orchestrator Queue `REFramework_JDE_Queue`
 
 ## 3️⃣ Transaction Processing
 **Workflow	Description**
-- ```Process.xaml``` - Main business logic — processes each transaction and invokes sub-workflows
-- ```SetTransactionStatus.xaml``` - Updates the transaction status in Orchestrator (Success, Business Exception, System Exception)
+- ```Process.xaml``` - Core business logic including:
+- **Navigate JDE menu**
+- Enter **Journal data line-by-line** (Account, Amount, Sub, SubType, Remark, Description)
+- Submit **entry** and capture **Batch Number**
+- Update **Excel with Batch info**
+- Convert **updated Excel to PDF**
+- **Run and download Batch Report**
+- **Send report via Outlook email** to stakeholders
 
 ## 4️⃣ Closure Phase
 **Workflow	Description**
 - ```CloseAllApplications.xaml``` - Logs out and gracefully closes all used applications
 
-## 🧰 Setting Up a New REFramework Project
-**Customize Config.xlsx**
-Add application paths, URLs, credentials, queue names, and other constants
+## 🛠️ Transaction Queue Item Format
 
-**Implement Application Initialization & Cleanup**
-Update InitAllApplications.xaml and CloseAllApplications.xaml to suit your process
+**Queue Name:** REFramework_JDE_Queue
+**SpecificContent Example:**
+```vb
+{
+  "AccountNumber": "1.1110.AUTOCSP",
+  "Amount": "89.00",
+  "Sub": "2AD",
+  "SubType": "S",
+  "Remark": "Test 8",
+  "Description": "AP ACCRUAL -2",
+  "PreparedBy": "Jane Doe"
+}
+```
 
-**Adapt Transaction Logic**
-Modify GetTransactionData.xaml and SetTransactionStatus.xaml if you're not using Orchestrator queues
+## ▶️ How to Run
+- Run the Dispatcher to upload Excel rows to JDEAccrualQueue
+- Open this Performer project in UiPath Studio
+- Ensure required Assets and Queue are available in Orchestrator
+- Run Main.xaml
+- Bot will process each queue item, generate and email reports
 
-**Develop Process Logic**
-Design the core automation steps inside Process.xaml
-Reuse or modularize using Invoke Workflow activities
+## 📁 Project Structure
+- `Main.xaml` – Entry point for REFramework
+- `InitAllSettings.xaml` – Loads config
+- `InitAllApplications.xaml` – Launches JDE and logs in
+- `Process.xaml` – Handles journal entry, reporting, and email
+- `KillAllProcesses.xaml` – Ends background processes
+- `CloseAllApplications.xaml` – Final cleanup
+- `Config.xlsx` – Dynamic values for paths, URLs, etc.
+
+---
+
+## 📈 Screenshots
+
 
 ---
 
@@ -69,7 +100,7 @@ Reuse or modularize using Invoke Workflow activities
 > 💡 This is the Performer part of the full REFramework solution. The Dispatcher (linked below) is responsible for uploading data to the queue.
 
 ### 🔗 Related Dispatcher Project
-[RPAChallengeREFrameworkDispatcher](https://github.com/SrushtiArekar/UiPath-Portfolio/tree/main/RPAChallengeUsingREFramework/RPAChallengeREFrameworkDispatcher)
+[REFDispatcher_JDE_Assignment](https://github.com/SrushtiArekar/RPA_UiPath/tree/main/RPA_JDEdwards_REFramework/REFDispatcher_JDE_Assignment)
 
 ---
 
@@ -132,10 +163,10 @@ Reuse or modularize using Invoke Workflow activities
 
 ## ▶️ How to Run
 
-1. Run the [Dispatcher](https://github.com/SrushtiArekar/UiPath-Portfolio/tree/main/RPAChallengeUsingREFramework/RPAChallengeREFrameworkDispatcher) project to upload queue items to `RPAChallengeREFrameworkQueue`.
+1. Run the [Dispatcher](https://github.com/SrushtiArekar/RPA_UiPath/tree/main/RPA_JDEdwards_REFramework/REFDispatcher_JDE_Assignment) project to upload queue items to `REFDispatcher_JDE_Assignment`.
 2. In UiPath Orchestrator:
    - Ensure assets like URL, credentials (if needed), etc. are defined.
-3. Open this [Performer](https://github.com/SrushtiArekar/UiPath-Portfolio/tree/main/RPAChallengeUsingREFramework/RPAChallenge_REFRamework) project in UiPath Studio.
+3. Open this [Performer](https://github.com/SrushtiArekar/RPA_UiPath/tree/main/RPA_JDEdwards_REFramework/REFramework_JDE_Assignment1) project in UiPath Studio.
 4. Run `Main.xaml`.
 5. Watch as it loops through the queue, submits the form, and logs the results.
 
@@ -143,12 +174,12 @@ Reuse or modularize using Invoke Workflow activities
 
 ## 🛠️ Built With
 
-- UiPath Studio – Community/Enterprise Edition
-- REFramework (Robotic Enterprise Framework) – Used for standardized project structure
-- UiPath Orchestrator – For managing assets and queues
-- Excel Activities Package – For reading tabular data
-- System Activities – For dictionary and workflow control
-- Orchestrator Queues – For transaction-level processing
+- **UiPath Studio** – Community/Enterprise Edition
+- **REFramework (Robotic Enterprise Framework)** – Used for standardized project structure
+- **UiPath Orchestrator** – For managing assets and queues
+- **Excel Activities Package** – For reading tabular data
+- **System Activities** – For dictionary and workflow control
+- **Orchestrator Queues** – For transaction-level processing
 
 ---
 
