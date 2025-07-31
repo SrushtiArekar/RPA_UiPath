@@ -29,8 +29,9 @@ This Dispatcher prepares transaction data and pushes each row to Orchestrator by
      For Each CurrentRow In dt_JDEData.Rows
      ```
    - Inline mapping in `Add Queue Item`:
-     ```vb
+
      SpecificContent → Collection:
+     ```vb
       {
         {"AccountNumber", CurrentRow.Item("Account Number").ToString},
         {"Amount", CurrentRow.Item("Amount").ToString},
@@ -50,7 +51,8 @@ This Dispatcher prepares transaction data and pushes each row to Orchestrator by
 - **Queue Type:** Classic Queue in Orchestrator
 - **Transaction Item Content Example:**
 
-```vb {
+```vb
+{
   "AccountNumber": "1.1110.AUTOCSP",
   "Amount": "89.00",
   "Sub": "2AD",
