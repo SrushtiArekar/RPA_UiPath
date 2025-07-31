@@ -112,7 +112,7 @@ Open REFDispatcher_JDE_Assignment in UiPath Studio.
 **5. Run the Dispatcher**
 - Run the Main.xaml file
 
-```
+---
 
 🛠️ **Built With**
 - UiPath Studio – Community/Enterprise Edition
@@ -121,7 +121,8 @@ Open REFDispatcher_JDE_Assignment in UiPath Studio.
 - Excel Activities Package – For reading tabular data
 - System Activities – For dictionary and workflow control
 - Orchestrator Queues – For transaction-level processing
-- 
+
+---
 
 ## 🙋‍♀️ Author
 
