@@ -10,14 +10,14 @@ The Robotic Enterprise Framework (REFramework) is a scalable and robust automati
 ---
 
 ## 🚀 Key Features
-- ✅ Built entirely on REFramework with best practices
-- ✅ Processes Accrual Journal Entries in JD Edwards
-- ✅ Retrieves transaction data from Orchestrator Queue
-- ✅ Populates Accrual Excel file with Batch Number & metadata
-- ✅ Generates and downloads the General Journal Batch Report
-- ✅ Merges PDFs and sends email with final report
-- ✅ Uses Config.xlsx and Assets for dynamic settings
-- ✅ Robust exception and retry mechanism for resilience
+-  Built entirely on REFramework with best practices
+-  Processes Accrual Journal Entries in JD Edwards
+-  Retrieves transaction data from Orchestrator Queue
+-  Populates Accrual Excel file with Batch Number & metadata
+-  Generates and downloads the General Journal Batch Report
+-  Merges PDFs and sends email with final report
+-  Uses Config.xlsx and Assets for dynamic settings
+-  Robust exception and retry mechanism for resilience
 
 ---
 
