@@ -57,7 +57,8 @@ This Dispatcher prepares transaction data and pushes each row to Orchestrator by
   "SubType": "S",
   "Remark": "Test 8",
   "Description": "AP ACCRUAL -2"
-}```
+}
+```
 
 
 ## 📸 Screenshots
