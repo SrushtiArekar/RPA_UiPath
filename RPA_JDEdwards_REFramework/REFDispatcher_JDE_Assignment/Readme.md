@@ -49,16 +49,16 @@ This Dispatcher prepares transaction data and pushes each row to Orchestrator by
 - **Queue Name:** `REFramework_JDE_Queue`
 - **Queue Type:** Classic Queue in Orchestrator
 - **Transaction Item Content Example:**
-  ```vb
-{
+
+```vb {
   "AccountNumber": "1.1110.AUTOCSP",
   "Amount": "89.00",
   "Sub": "2AD",
   "SubType": "S",
   "Remark": "Test 8",
   "Description": "AP ACCRUAL -2"
-}
-```
+}```
+
 
 ## 📸 Screenshots
 
