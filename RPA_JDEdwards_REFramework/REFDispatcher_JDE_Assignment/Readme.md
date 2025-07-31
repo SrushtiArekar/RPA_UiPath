@@ -117,12 +117,12 @@ Open REFDispatcher_JDE_Assignment in UiPath Studio.
 ---
 
 🛠️ **Built With**
-- UiPath Studio – Community/Enterprise Edition
-- REFramework (Robotic Enterprise Framework) – Used for standardized project structure
-- UiPath Orchestrator – For managing assets and queues
-- Excel Activities Package – For reading tabular data
-- System Activities – For dictionary and workflow control
-- Orchestrator Queues – For transaction-level processing
+- **UiPath Studio** – Community/Enterprise Edition
+- **REFramework (Robotic Enterprise Framework)** – Used for standardized project structure
+- **UiPath Orchestrator** – For managing assets and queues
+- **Excel Activities Package** – For reading tabular data
+- **System Activities** – For dictionary and workflow control
+- **Orchestrator Queues** – For transaction-level processing
 
 ---
 
