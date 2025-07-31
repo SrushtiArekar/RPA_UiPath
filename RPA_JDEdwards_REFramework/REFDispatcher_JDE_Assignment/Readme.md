@@ -65,35 +65,35 @@ This Dispatcher prepares transaction data and pushes each row to Orchestrator by
 
 ## 📸 Screenshots
 
-1. Get the Asset
+**1. Get the Asset**
 ![Form Screenshot](Images/Step1.png)
 
-2. Read the Excel File
+**2. Read the Excel File**
 ![Form Screenshot](Images/Step2.png)
 ![Form Screenshot](Images/Step3.png)
 ![Form Screenshot](Images/Step4.png)
 
-3. Read Range - and store it into the Data Table dt_JDEData
+**3. Read Range - and store it into the Data Table dt_JDEData**
 ![Form Screenshot](Images/Step5.png)
 
-4. Delete the last row from the Data Table
+**4. Delete the last row from the Data Table**
 ![Form Screenshot](Images/Step6.png)
 ![Form Screenshot](Images/Step7.png)
 
-5. Find the Description in the Excel sheet and add new column to the Data table and add the description value in every row
+**5. Find the Description in the Excel sheet and add new column to the Data table and add the description value in every row**
 ![Form Screenshot](Images/Step8.png)
 ![Form Screenshot](Images/Step9.png)
 ![Form Screenshot](Images/Step10.png)
 ![Form Screenshot](Images/Step12.png)
 
-6. Foreach Row in the Data Table -  Add Queue Item - Map the parameters
+**6. Foreach Row in the Data Table -  Add Queue Item - Map the parameters**
 ![Form Screenshot](Images/Step13.png)
 ![Form Screenshot](Images/Step14.png)
 ![Form Screenshot](Images/Step15.png)
 ![Form Screenshot](Images/Step16.png)
 
-7. After Execution - successfully added the data from the Excel to Queue
-When we View the Transactions in Queue
+**7. After Execution - successfully added the data from the Excel to Queue**
+**When we View the Transactions in Queue**
 ![Form Screenshot](Images/QueueTransactionView.png)
 ![Form Screenshot](Images/QueueTransactionView2.png)
 
