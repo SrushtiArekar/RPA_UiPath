@@ -82,11 +82,6 @@ The Robotic Enterprise Framework (REFramework) is a scalable and robust automati
 
 ---
 
-## 📈 Screenshots
-
-
----
-
 ## 🛡️ Exception Handling & Logging
 
 **REFramework includes:**
