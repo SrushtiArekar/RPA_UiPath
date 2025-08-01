@@ -159,7 +159,7 @@ The Robotic Enterprise Framework (REFramework) is a scalable and robust automati
 ![Form Screenshot](Images/JDS1.png)
 ![Form Screenshot](Images/JDS2.png)
 
-**8. Map the parameters**
+**8. Map the input/output parameters**
 ![Form Screenshot](Images/Step9.png)
 
 **9. In Process Transaction - write into the fields and grid the data line by line and then click okay button**
@@ -174,7 +174,7 @@ The Robotic Enterprise Framework (REFramework) is a scalable and robust automati
 ![Form Screenshot](Images/Step16.png)
 ![Form Screenshot](Images/Step17.png)
 
-**11. Map the parameters**
+**11. Map the input/output parameters**
 ![Form Screenshot](Images/Step18.png)
 
 **12. End Process - in Close all Application Workflow - close the Journal Entry application and run the General Journal by Batch Report**
