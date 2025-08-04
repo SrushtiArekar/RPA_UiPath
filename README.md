@@ -27,7 +27,7 @@ A UiPath automation project that reads structured data from an Excel file and su
 An advanced UiPath project implementing the RPA Challenge using **REFramework**, **Orchestrator Queues**, and **Assets**.
 
 **Key Highlights:**
-- 
+
 ✅ Uses Queue-based transaction processing  
 ✅ Assets-driven configuration for file path and URL  
 ✅ Dynamic field mapping using `Anchor Base`  
