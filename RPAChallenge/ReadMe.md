@@ -3,11 +3,11 @@ A UiPath automation project that reads structured data from an Excel file and su
 
 This is a UiPath automation project that completes the [RPA Challenge](https://rpachallenge.com/) by:
 
-✅ Reading data from an Excel file  
-✅ Opening the RPA Challenge form  
-✅ Typing data row by row dynamically (fields change order)  
-✅ Submitting each entry after filling all fields  
-✅ Looping until all Excel rows are submitted  
+✅ Reading data from an Excel file.  
+✅ Opening the RPA Challenge form.  
+✅ Typing data row by row dynamically (fields change order).  
+✅ Submitting each entry after filling all fields.  
+✅ Looping until all Excel rows are submitted.  
 
 ---
 
