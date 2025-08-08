@@ -6,13 +6,13 @@ This project is an advanced version of the [RPA Challenge](https://rpachallenge.
 
 ## 🚀 What It Does
 
-✅ Reads structured data from an Excel file  
-✅ Pushes each row as a transaction item to an **Orchestrator Queue**  
-✅ Uses **REFramework to process each item dynamically**  
-✅ Enters data into the web form (with fields changing order)  
-✅ Uses **Assets for input file path and URL**  
-✅ **Logs every step using built-in logging of REFramework**  
-✅ **Gracefully handles system/business exceptions**
+✅ Reads structured data from an Excel file.
+✅ Pushes each row as a transaction item to an **Orchestrator Queue**.
+✅ Uses **REFramework to process each item dynamically**.  
+✅ Enters data into the web form (with fields changing order).  
+✅ Uses **Assets for input file path and URL**.  
+✅ **Logs every step using built-in logging of REFramework**.  
+✅ **Gracefully handles system/business exceptions**.
 
 ---
 
